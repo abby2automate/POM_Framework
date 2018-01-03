@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="chrome(failed)">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="none">
+  <parameter name="browser" value="chrome"/>
+  <test name="chrome(failed)" parallel="none">
     <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.test.runner.SingleTest">
         <methods>
-          <include name="setBrowser"/>
-          <include name="teardown"/>
-          <include name="login_Page_true" invocation-numbers="1"/>
+          <include name="login_Page_true"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.test.runner.SingleTest -->

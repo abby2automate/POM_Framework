@@ -1,32 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Chrome(failed)">
+  <test name="chrome(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.test.runner.Runner">
+      <class name="com.test.runner.SingleTest">
         <methods>
-          <include name="login_Page_true"/>
-          <include name="load_browser"/>
-          <include name="getResult"/>
-          <include name="load_Utility"/>
-          <include name="endReport"/>
+          <include name="setBrowser"/>
+          <include name="teardown"/>
+          <include name="login_Page_true" invocation-numbers="1"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.test.runner.Runner -->
+      </class> <!-- com.test.runner.SingleTest -->
     </classes>
-  </test> <!-- Chrome(failed) -->
-  <test name="firefox(failed)">
-    <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="com.test.runner.Runner">
-        <methods>
-          <include name="login_Page_true"/>
-          <include name="load_browser"/>
-          <include name="getResult"/>
-          <include name="load_Utility"/>
-          <include name="endReport"/>
-        </methods>
-      </class> <!-- com.test.runner.Runner -->
-    </classes>
-  </test> <!-- firefox(failed) -->
+  </test> <!-- chrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->

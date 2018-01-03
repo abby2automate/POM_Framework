@@ -11,6 +11,10 @@ import java.util.Properties;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -26,6 +30,8 @@ import org.apache.commons.io.FileUtils;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.test.businesslogic.LoginPage;
+
+
 
 public class Utility {
 
@@ -57,7 +63,7 @@ public class Utility {
 
 	public void load_ExtentReports(String browser) {
 	//	extent = new ExtentReports("C:\\Automation_FrameWorks\\ExtentReports\\" + browser + "_ExtentReport.html", true);
-		extent = new ExtentReports (System.getProperty("user.dir") +"/test-output/ExtentReport.html", true);
+		extent = new ExtentReports (System.getProperty("user.dir") +"/test-output/"+browser+"ExtentReport.html", true);
 		extent.addSystemInfo("Host Name", "FrameWork").addSystemInfo("Environment", "Windows")
 				.addSystemInfo("User Name", "Appu");
 		extent.loadConfig(new File(p.getProperty("extent-configFile")));
@@ -140,5 +146,33 @@ public class Utility {
 		FileUtils.copyFile(source, finalDestination);
 		return destination;
 	}
-
+	
+	public static Object[][] getTestData(String filename,String sheetName) throws IOException{
+	
+		File f = new File("D:\\"+filename);
+		FileInputStream file = new FileInputStream(f);
+		
+		Workbook workbook = null;
+		String fileExtn = filename.substring(filename.indexOf("."));
+		
+		if(fileExtn.equals(".xls")){
+			workbook = new HSSFWorkbook(file);
+		} else if(fileExtn.equals(".xlsx")){
+			workbook = new XSSFWorkbook(file);
+		}
+			
+		Sheet sheet = workbook.getSheet(sheetName);
+			
+		Object[][] data = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
+		
+		for(int i=0;i<sheet.getLastRowNum();i++)
+		{
+			for(int k=0;k<sheet.getRow(0).getLastCellNum();k++)
+			{
+				data[i][k] = sheet.getRow(i+1).getCell(k).toString();
+			}
+		}
+		
+		return data;
+	}
 }

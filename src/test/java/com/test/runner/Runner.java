@@ -3,6 +3,7 @@ package com.test.runner;
 import static org.testng.Assert.assertEquals;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -28,6 +29,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -42,10 +44,8 @@ public class Runner extends Utility {
 	public static Utility u;
 
 	@Parameters({ "browser" })
-	@BeforeTest
+	@BeforeTest()
 	public void setUp(String browser) throws IOException {
-
-		System.out.println("------>>> THE BROWSER IS : " + browser + " <<<--------");
 
 		u = new Utility();
 
@@ -57,6 +57,8 @@ public class Runner extends Utility {
 
 		// Initialize ExtentReports Objects
 		u.load_ExtentReports(browser);
+
+		System.out.println("------>>> THE BROWSER IS : " + browser + " <<<--------");
 
 		u.load_browser(browser);
 
@@ -71,30 +73,33 @@ public class Runner extends Utility {
 
 	}
 
-	@Test(priority = 1, enabled = true)
-	public void login_Page_true() throws InterruptedException {
+	@Test(priority = 1, enabled = true, dataProviderClass = DataProviderUnit.class, dataProvider = "getTestData")
+	public void login_Page_true(String username, String password) throws InterruptedException {
 
 		extent_logger = extent.startTest("Login Page True");
 		log.info("---------->> In login_Page Method True <<----------");
 		LoginPage lp = new LoginPage();
-		lp.set_username("tutorial");
-		lp.set_password("tutorial");
+		lp.set_username(username);
+		lp.set_password(password);
 		String actual_title = lp.click_SignIn();
 		assertEquals(actual_title, "Find a Flight: Mercury Tours:");
 		log.info("---------->> In login_Page Method - True :: Completed <<----------");
+		driver.findElement(By.linkText("SIGN-OFF")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.linkText("Home")).click();
 
 	}
 
-	@Test(priority = 2, enabled = false)
-	public void login_Page_false() throws InterruptedException {
+	@Test(priority = 2, enabled = true, dataProviderClass = DataProviderUnit.class, dataProvider = "getTestData")
+	public void login_Page_false(String username, String password) throws InterruptedException {
 
 		extent_logger = extent.startTest("Login Page False");
 		log.info("---------->> In login_Page Method - False <<----------");
 		LoginPage lp = new LoginPage();
-		lp.set_username("test");
-		lp.set_password("test");
+		lp.set_username("username");
+		lp.set_password("password");
 		String actual_title = lp.click_SignIn();
-		assertEquals(actual_title, "Find a Flight: Mercury Tours:");
+		assertEquals(actual_title, "Find a Flight: Mercury Tours: ");
 		log.info("---------->> In login_Page Method - False :: Completed <<----------");
 	}
 
@@ -149,18 +154,13 @@ public class Runner extends Utility {
 		} else if (result.getStatus() == ITestResult.SKIP) {
 			extent_logger.log(LogStatus.SKIP, "Test Case Skipped is " + result.getName());
 		} else if (result.getStatus() == ITestResult.SUCCESS) {
-			boolean testr = result.getStatus() == ITestResult.SUCCESS;
-			System.out.println(testr);
-			System.out.println("Method name is : " + result.getName());
-			LogStatus l = LogStatus.PASS;
 			extent_logger.log(LogStatus.PASS, "Test Case Passed is" + result.getName());
 		}
-		extent.endTest(extent_logger);
-
 	}
 
 	@AfterTest
 	public void endReport() {
+		extent.endTest(extent_logger);
 		extent.flush();
 		extent.close();
 		driver.close();

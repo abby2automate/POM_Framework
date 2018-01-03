@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.test.runner.RunnerSingleTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="login_Page_true"/>
+          <include name="endReport"/>
+          <include name="setBrowser"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.test.runner.RunnerSingleTest -->
+      <class name="com.test.runner.Runner">
+        <methods>
+          <include name="login_Page_true"/>
+          <include name="getResult"/>
+          <include name="login_Page_false"/>
+          <include name="setUp"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- com.test.runner.Runner -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
