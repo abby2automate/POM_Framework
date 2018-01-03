@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="1" total="3" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="36220" started-at="2018-01-03T16:41:01Z" finished-at="2018-01-03T16:41:37Z">
+  <suite name="Suite" duration-ms="37210" started-at="2018-01-03T20:42:33Z" finished-at="2018-01-03T20:43:10Z">
     <groups>
     </groups>
-    <test name="chrome" duration-ms="36220" started-at="2018-01-03T16:41:01Z" finished-at="2018-01-03T16:41:37Z">
-      <class name="com.test.runner.SingleTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.test.runner.SingleTest@59ec2012]" name="setUp" is-config="true" duration-ms="447" started-at="2018-01-03T22:11:01Z" finished-at="2018-01-03T22:11:01Z">
+    <test name="chrome" duration-ms="37210" started-at="2018-01-03T20:42:33Z" finished-at="2018-01-03T20:43:10Z">
+      <class name="com.test.runner.DataDrivenTest_DB">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.test.runner.DataDrivenTest_DB@4cf777e8]" name="setUp" is-config="true" duration-ms="645" started-at="2018-01-04T02:12:33Z" finished-at="2018-01-04T02:12:34Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setBrowser(java.lang.String)[pri:0, instance:com.test.runner.SingleTest@59ec2012]" name="setBrowser" is-config="true" duration-ms="6618" started-at="2018-01-03T22:11:01Z" finished-at="2018-01-03T22:11:08Z">
+        <test-method status="PASS" signature="setBrowser(java.lang.String)[pri:0, instance:com.test.runner.DataDrivenTest_DB@4cf777e8]" name="setBrowser" is-config="true" duration-ms="10721" started-at="2018-01-04T02:12:34Z" finished-at="2018-01-04T02:12:44Z">
           <params>
             <param index="0">
               <value>
@@ -29,27 +29,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowser -->
-        <test-method status="PASS" signature="login_Page_true(java.lang.String, java.lang.String)[pri:1, instance:com.test.runner.SingleTest@59ec2012]" name="login_Page_true" duration-ms="14225" started-at="2018-01-03T22:11:08Z" data-provider="getTestData" finished-at="2018-01-03T22:11:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[tutorial]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[tutorial]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="login_Page_true()[pri:1, instance:com.test.runner.DataDrivenTest_DB@4cf777e8]" name="login_Page_true" duration-ms="8861" started-at="2018-01-04T02:12:44Z" finished-at="2018-01-04T02:12:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_Page_true -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.runner.SingleTest@59ec2012]" name="teardown" is-config="true" duration-ms="716" started-at="2018-01-03T22:11:22Z" finished-at="2018-01-03T22:11:23Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.runner.DataDrivenTest_DB@4cf777e8]" name="teardown" is-config="true" duration-ms="855" started-at="2018-01-04T02:12:53Z" finished-at="2018-01-04T02:12:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setBrowser(java.lang.String)[pri:0, instance:com.test.runner.SingleTest@59ec2012]" name="setBrowser" is-config="true" duration-ms="6416" started-at="2018-01-03T22:11:23Z" finished-at="2018-01-03T22:11:29Z">
+        <test-method status="PASS" signature="setBrowser(java.lang.String)[pri:0, instance:com.test.runner.DataDrivenTest_DB@4cf777e8]" name="setBrowser" is-config="true" duration-ms="8326" started-at="2018-01-04T02:12:54Z" finished-at="2018-01-04T02:13:03Z">
           <params>
             <param index="0">
               <value>
@@ -60,35 +48,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowser -->
-        <test-method status="FAIL" signature="login_Page_true(java.lang.String, java.lang.String)[pri:1, instance:com.test.runner.SingleTest@59ec2012]" name="login_Page_true" duration-ms="6650" started-at="2018-01-03T22:11:29Z" data-provider="getTestData" finished-at="2018-01-03T22:11:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[abc]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[abc]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Find a Flight: Mercury Tours:] but found [Sign-on: Mercury Tours]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Find a Flight: Mercury Tours:] but found [Sign-on: Mercury Tours]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:453)at org.testng.Assert.assertEquals(Assert.java:463)at com.test.runner.SingleTest.login_Page_true(SingleTest.java:64)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="login_Page_false()[pri:2, instance:com.test.runner.DataDrivenTest_DB@4cf777e8]" name="login_Page_false" duration-ms="6974" started-at="2018-01-04T02:13:03Z" finished-at="2018-01-04T02:13:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login_Page_true -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.runner.SingleTest@59ec2012]" name="teardown" is-config="true" duration-ms="727" started-at="2018-01-03T22:11:36Z" finished-at="2018-01-03T22:11:37Z">
+        </test-method> <!-- login_Page_false -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.runner.DataDrivenTest_DB@4cf777e8]" name="teardown" is-config="true" duration-ms="803" started-at="2018-01-04T02:13:10Z" finished-at="2018-01-04T02:13:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.test.runner.SingleTest -->
+      </class> <!-- com.test.runner.DataDrivenTest_DB -->
     </test> <!-- chrome -->
   </suite> <!-- Suite -->
 </testng-results>

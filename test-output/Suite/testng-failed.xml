@@ -4,14 +4,14 @@
   <test name="chrome(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.test.runner.SingleTest">
+      <class name="com.test.runner.DataDrivenTest_DB">
         <methods>
-          <include name="setBrowser"/>
           <include name="teardown"/>
-          <include name="login_Page_true" invocation-numbers="1"/>
           <include name="setUp"/>
+          <include name="setBrowser"/>
+          <include name="login_Page_false"/>
         </methods>
-      </class> <!-- com.test.runner.SingleTest -->
+      </class> <!-- com.test.runner.DataDrivenTest_DB -->
     </classes>
   </test> <!-- chrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->

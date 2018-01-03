@@ -13,7 +13,7 @@
 	<test name="chrome">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.test.runner.SingleTest" />
+			<class name="com.test.runner.DataDrivenTest_DB" />
 		</classes>
 	</test>
 

@@ -1,0 +1,117 @@
+01:57:00.085 [main] INFO  com.test.utilities.Utility - ===================================================================================================================
+01:57:00.090 [main] INFO  com.test.utilities.Utility -                                          Testing Execution Starts                                                  
+01:57:00.091 [main] INFO  com.test.utilities.Utility - ===================================================================================================================
+01:57:00.091 [main] INFO  com.test.utilities.Utility - The Browser is : chromeThe Thread is : 1
+01:57:00.360 [main] INFO  com.test.utilities.Utility - Thread is : 1 ---------->> Starting to Load Chrome Browser <<----------
+01:57:00.360 [main] INFO  com.test.utilities.Utility - Class Details : com.test.utilities.Utility.load_chrome()
+01:57:07.011 [main] INFO  com.test.utilities.Utility - Thread is : 1---------->> Chrome Browser Loaded <<----------
+01:57:09.368 [main] INFO  com.test.utilities.Utility - Thread is : 1 ---------->> Starting to Load URL <<----------
+01:57:09.368 [main] INFO  com.test.utilities.Utility - Class Details : com.test.utilities.Utility.load_url()
+01:57:11.432 [main] INFO  com.test.utilities.Utility - Thread is : 1 ---------->> URL Loaded <<----------
+01:57:11.447 [main] INFO  com.test.utilities.Utility - ---------->> In login_Page Method True <<----------
+01:57:11.488 [main] INFO  com.test.utilities.Utility - Thread is : 1In set_username Method
+01:57:11.488 [main] INFO  com.test.utilities.Utility - Class Details : com.test.businesslogic.LoginPage.set_username(String username)
+01:57:11.488 [main] DEBUG com.test.utilities.Utility - UserName Send is : tutorial
+01:57:11.584 [main] INFO  com.test.utilities.Utility - Thread is : 1Method Completed
+01:57:11.584 [main] INFO  com.test.utilities.Utility - Thread is : 1In set_password Method
+01:57:11.585 [main] INFO  com.test.utilities.Utility - com.test.businesslogic.LoginPage.set_password(String password)
+01:57:11.666 [main] INFO  com.test.utilities.Utility - Thread is : 1Method Completed
+01:57:11.667 [main] INFO  com.test.utilities.Utility - Thread is : 1In click_SignIn Method
+01:57:11.667 [main] INFO  com.test.utilities.Utility - com.test.businesslogic.LoginPage.click_SignIn()
+01:57:20.163 [main] INFO  com.test.utilities.Utility - Thread is : 1Method Completed
+01:57:20.168 [main] INFO  com.test.utilities.Utility - Thread is : 1In set_username Method
+01:57:20.168 [main] INFO  com.test.utilities.Utility - Class Details : com.test.businesslogic.LoginPage.set_username(String username)
+01:57:20.168 [main] DEBUG com.test.utilities.Utility - UserName Send is : test
+01:58:35.324 [main] INFO  com.test.utilities.Utility - ===================================================================================================================
+01:58:35.332 [main] INFO  com.test.utilities.Utility -                                          Testing Execution Starts                                                  
+01:58:35.332 [main] INFO  com.test.utilities.Utility - ===================================================================================================================
+01:58:35.333 [main] INFO  com.test.utilities.Utility - The Browser is : chromeThe Thread is : 1
+01:58:35.588 [main] INFO  com.test.utilities.Utility - Thread is : 1 ---------->> Starting to Load Chrome Browser <<----------
+01:58:35.588 [main] INFO  com.test.utilities.Utility - Class Details : com.test.utilities.Utility.load_chrome()
+01:58:38.886 [main] INFO  com.test.utilities.Utility - Thread is : 1---------->> Chrome Browser Loaded <<----------
+01:58:41.529 [main] INFO  com.test.utilities.Utility - Thread is : 1 ---------->> Starting to Load URL <<----------
+01:58:41.529 [main] INFO  com.test.utilities.Utility - Class Details : com.test.utilities.Utility.load_url()
+01:58:44.219 [main] INFO  com.test.utilities.Utility - Thread is : 1 ---------->> URL Loaded <<----------
+01:58:44.243 [main] INFO  com.test.utilities.Utility - ---------->> In login_Page Method True <<----------
+01:58:44.288 [main] INFO  com.test.utilities.Utility - Thread is : 1In set_username Method
+01:58:44.288 [main] INFO  com.test.utilities.Utility - Class Details : com.test.businesslogic.LoginPage.set_username(String username)
+01:58:44.288 [main] DEBUG com.test.utilities.Utility - UserName Send is : tutorial
+01:58:44.398 [main] INFO  com.test.utilities.Utility - Thread is : 1Method Completed
+01:58:44.398 [main] INFO  com.test.utilities.Utility - Thread is : 1In set_password Method
+01:58:44.398 [main] INFO  com.test.utilities.Utility - com.test.businesslogic.LoginPage.set_password(String password)
+01:58:44.487 [main] INFO  com.test.utilities.Utility - Thread is : 1Method Completed
+01:58:44.487 [main] INFO  com.test.utilities.Utility - Thread is : 1In click_SignIn Method
+01:58:44.487 [main] INFO  com.test.utilities.Utility - com.test.businesslogic.LoginPage.click_SignIn()
+01:58:53.147 [main] INFO  com.test.utilities.Utility - Thread is : 1Method Completed
+01:58:59.252 [main] INFO  com.test.utilities.Utility - Thread is : 1In set_username Method
+01:58:59.252 [main] INFO  com.test.utilities.Utility - Class Details : com.test.businesslogic.LoginPage.set_username(String username)
+01:58:59.252 [main] DEBUG com.test.utilities.Utility - UserName Send is : test
+01:58:59.371 [main] INFO  com.test.utilities.Utility - Thread is : 1Method Completed
+01:58:59.372 [main] INFO  com.test.utilities.Utility - Thread is : 1In set_password Method
+01:58:59.399 [main] INFO  com.test.utilities.Utility - com.test.businesslogic.LoginPage.set_password(String password)
+01:58:59.499 [main] INFO  com.test.utilities.Utility - Thread is : 1Method Completed
+01:58:59.499 [main] INFO  com.test.utilities.Utility - Thread is : 1In click_SignIn Method
+01:58:59.500 [main] INFO  com.test.utilities.Utility - com.test.businesslogic.LoginPage.click_SignIn()
+01:59:06.237 [main] INFO  com.test.utilities.Utility - Thread is : 1Method Completed
+02:11:21.028 [main] INFO  com.test.utilities.Utility - ===================================================================================================================
+02:11:21.036 [main] INFO  com.test.utilities.Utility -                                          Testing Execution Starts                                                  
+02:11:21.037 [main] INFO  com.test.utilities.Utility - ===================================================================================================================
+02:11:21.037 [main] INFO  com.test.utilities.Utility - The Browser is : chromeThe Thread is : 1
+02:11:21.482 [main] INFO  com.test.utilities.Utility - Thread is : 1 ---------->> Starting to Load Chrome Browser <<----------
+02:11:21.482 [main] INFO  com.test.utilities.Utility - Class Details : com.test.utilities.Utility.load_chrome()
+02:11:28.021 [main] INFO  com.test.utilities.Utility - Thread is : 1---------->> Chrome Browser Loaded <<----------
+02:11:30.082 [main] INFO  com.test.utilities.Utility - Thread is : 1 ---------->> Starting to Load URL <<----------
+02:11:30.082 [main] INFO  com.test.utilities.Utility - Class Details : com.test.utilities.Utility.load_url()
+02:11:35.079 [main] INFO  com.test.utilities.Utility - Thread is : 1 ---------->> URL Loaded <<----------
+02:11:35.102 [main] INFO  com.test.utilities.Utility - ---------->> In login_Page Method True <<----------
+02:11:35.154 [main] INFO  com.test.utilities.Utility - Thread is : 1In set_username Method
+02:11:35.154 [main] INFO  com.test.utilities.Utility - Class Details : com.test.businesslogic.LoginPage.set_username(String username)
+02:11:35.154 [main] DEBUG com.test.utilities.Utility - UserName Send is : tutorials
+02:11:35.275 [main] INFO  com.test.utilities.Utility - Thread is : 1Method Completed
+02:11:35.275 [main] INFO  com.test.utilities.Utility - Thread is : 1In set_password Method
+02:11:35.275 [main] INFO  com.test.utilities.Utility - com.test.businesslogic.LoginPage.set_password(String password)
+02:11:35.357 [main] INFO  com.test.utilities.Utility - Thread is : 1Method Completed
+02:11:35.358 [main] INFO  com.test.utilities.Utility - Thread is : 1In click_SignIn Method
+02:11:35.358 [main] INFO  com.test.utilities.Utility - com.test.businesslogic.LoginPage.click_SignIn()
+02:11:44.275 [main] INFO  com.test.utilities.Utility - Thread is : 1Method Completed
+02:11:44.281 [main] INFO  com.test.utilities.Utility - ---------->> In login_Page Method - True :: Completed <<----------
+02:12:34.247 [main] INFO  com.test.utilities.Utility - ===================================================================================================================
+02:12:34.254 [main] INFO  com.test.utilities.Utility -                                          Testing Execution Starts                                                  
+02:12:34.254 [main] INFO  com.test.utilities.Utility - ===================================================================================================================
+02:12:34.254 [main] INFO  com.test.utilities.Utility - The Browser is : chromeThe Thread is : 1
+02:12:34.517 [main] INFO  com.test.utilities.Utility - Thread is : 1 ---------->> Starting to Load Chrome Browser <<----------
+02:12:34.518 [main] INFO  com.test.utilities.Utility - Class Details : com.test.utilities.Utility.load_chrome()
+02:12:39.885 [main] INFO  com.test.utilities.Utility - Thread is : 1---------->> Chrome Browser Loaded <<----------
+02:12:42.522 [main] INFO  com.test.utilities.Utility - Thread is : 1 ---------->> Starting to Load URL <<----------
+02:12:42.522 [main] INFO  com.test.utilities.Utility - Class Details : com.test.utilities.Utility.load_url()
+02:12:44.995 [main] INFO  com.test.utilities.Utility - Thread is : 1 ---------->> URL Loaded <<----------
+02:12:45.003 [main] INFO  com.test.utilities.Utility - ---------->> In login_Page Method True <<----------
+02:12:45.030 [main] INFO  com.test.utilities.Utility - Thread is : 1In set_username Method
+02:12:45.030 [main] INFO  com.test.utilities.Utility - Class Details : com.test.businesslogic.LoginPage.set_username(String username)
+02:12:45.031 [main] DEBUG com.test.utilities.Utility - UserName Send is : tutorials
+02:12:45.137 [main] INFO  com.test.utilities.Utility - Thread is : 1Method Completed
+02:12:45.137 [main] INFO  com.test.utilities.Utility - Thread is : 1In set_password Method
+02:12:45.137 [main] INFO  com.test.utilities.Utility - com.test.businesslogic.LoginPage.set_password(String password)
+02:12:45.230 [main] INFO  com.test.utilities.Utility - Thread is : 1Method Completed
+02:12:45.231 [main] INFO  com.test.utilities.Utility - Thread is : 1In click_SignIn Method
+02:12:45.231 [main] INFO  com.test.utilities.Utility - com.test.businesslogic.LoginPage.click_SignIn()
+02:12:53.851 [main] INFO  com.test.utilities.Utility - Thread is : 1Method Completed
+02:12:53.856 [main] INFO  com.test.utilities.Utility - ---------->> In login_Page Method - True :: Completed <<----------
+02:12:54.739 [main] INFO  com.test.utilities.Utility - Thread is : 1 ---------->> Starting to Load Chrome Browser <<----------
+02:12:54.740 [main] INFO  com.test.utilities.Utility - Class Details : com.test.utilities.Utility.load_chrome()
+02:12:58.043 [main] INFO  com.test.utilities.Utility - Thread is : 1---------->> Chrome Browser Loaded <<----------
+02:13:00.742 [main] INFO  com.test.utilities.Utility - Thread is : 1 ---------->> Starting to Load URL <<----------
+02:13:00.743 [main] INFO  com.test.utilities.Utility - Class Details : com.test.utilities.Utility.load_url()
+02:13:03.046 [main] INFO  com.test.utilities.Utility - Thread is : 1 ---------->> URL Loaded <<----------
+02:13:03.052 [main] INFO  com.test.utilities.Utility - ---------->> In login_Page Method - False <<----------
+02:13:03.060 [main] INFO  com.test.utilities.Utility - Thread is : 1In set_username Method
+02:13:03.082 [main] INFO  com.test.utilities.Utility - Class Details : com.test.businesslogic.LoginPage.set_username(String username)
+02:13:03.082 [main] DEBUG com.test.utilities.Utility - UserName Send is : test
+02:13:03.272 [main] INFO  com.test.utilities.Utility - Thread is : 1Method Completed
+02:13:03.272 [main] INFO  com.test.utilities.Utility - Thread is : 1In set_password Method
+02:13:03.272 [main] INFO  com.test.utilities.Utility - com.test.businesslogic.LoginPage.set_password(String password)
+02:13:03.369 [main] INFO  com.test.utilities.Utility - Thread is : 1Method Completed
+02:13:03.379 [main] INFO  com.test.utilities.Utility - Thread is : 1In click_SignIn Method
+02:13:03.380 [main] INFO  com.test.utilities.Utility - com.test.businesslogic.LoginPage.click_SignIn()
+02:13:10.019 [main] INFO  com.test.utilities.Utility - Thread is : 1Method Completed
+02:13:10.020 [main] INFO  com.test.utilities.Utility - ---------->> In login_Page Method - False :: Completed <<----------

@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 import com.test.businesslogic.LoginPage;
 import com.test.utilities.Utility;
 
-public class SingleTest extends Utility {
+public class DataDrivernTest_Excel extends Utility {
 
 	public static Utility u;
 
