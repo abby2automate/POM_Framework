@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="19808" started-at="2018-01-03T08:50:54Z" finished-at="2018-01-03T08:51:14Z">
+  <suite name="Suite" duration-ms="22994" started-at="2018-01-03T10:56:55Z" finished-at="2018-01-03T10:57:18Z">
     <groups>
     </groups>
-    <test name="chrome" duration-ms="19808" started-at="2018-01-03T08:50:54Z" finished-at="2018-01-03T08:51:14Z">
+    <test name="chrome" duration-ms="22994" started-at="2018-01-03T10:56:55Z" finished-at="2018-01-03T10:57:18Z">
       <class name="com.test.runner.Runner">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.test.runner.Runner@60addb54]" name="setUp" is-config="true" duration-ms="9514" started-at="2018-01-03T14:20:54Z" finished-at="2018-01-03T14:21:04Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.test.runner.Runner@614c5515]" name="setUp" is-config="true" duration-ms="10589" started-at="2018-01-03T16:26:55Z" finished-at="2018-01-03T16:27:06Z">
           <params>
             <param index="0">
               <value>
@@ -18,22 +18,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="login_Page_true()[pri:1, instance:com.test.runner.Runner@60addb54]" name="login_Page_true" duration-ms="8938" started-at="2018-01-03T14:21:04Z" finished-at="2018-01-03T14:21:13Z">
+        <test-method status="PASS" signature="login_Page_true()[pri:1, instance:com.test.runner.Runner@614c5515]" name="login_Page_true" duration-ms="9118" started-at="2018-01-03T16:27:06Z" finished-at="2018-01-03T16:27:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_Page_true -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.test.runner.Runner@60addb54]" name="getResult" is-config="true" duration-ms="15" started-at="2018-01-03T14:21:13Z" finished-at="2018-01-03T14:21:13Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.test.runner.Runner@614c5515]" name="getResult" is-config="true" duration-ms="7" started-at="2018-01-03T16:27:15Z" finished-at="2018-01-03T16:27:15Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login_Page_true status=SUCCESS method=Runner.login_Page_true()[pri:1, instance:com.test.runner.Runner@60addb54] output={null}]]]>
+                <![CDATA[[TestResult name=login_Page_true status=SUCCESS method=Runner.login_Page_true()[pri:1, instance:com.test.runner.Runner@614c5515] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.test.runner.Runner@60addb54]" name="endReport" is-config="true" duration-ms="1306" started-at="2018-01-03T14:21:13Z" finished-at="2018-01-03T14:21:14Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.test.runner.Runner@614c5515]" name="endReport" is-config="true" duration-ms="3264" started-at="2018-01-03T16:27:15Z" finished-at="2018-01-03T16:27:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

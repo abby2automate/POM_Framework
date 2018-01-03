@@ -3,21 +3,19 @@
 <suite name="Suite" parallel="none" >
 
 
-<!-- 	<test name="chrome_headless">
+	<test name="chrome_headless">
 		<parameter name="browser" value="chrome_headless" />
 		<classes>
 			<class name="com.test.runner.Runner" />
 		</classes>
-	</test>  -->
+	</test> 
 	
-	
-	<test name="chrome">
+<!-- 	<test name="chrome">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.test.runner.Runner" />
 		</classes>
-	</test> 
-
+	</test> --> 
 
 <!-- 	<test name="firefox">
 		<parameter name="browser" value="firefox" />

@@ -56,7 +56,8 @@ public class Utility {
 	}
 
 	public void load_ExtentReports(String browser) {
-		extent = new ExtentReports("C:\\Automation_FrameWorks\\ExtentReports\\" + browser + "_ExtentReport.html", true);
+	//	extent = new ExtentReports("C:\\Automation_FrameWorks\\ExtentReports\\" + browser + "_ExtentReport.html", true);
+		extent = new ExtentReports (System.getProperty("user.dir") +"/test-output/ExtentReport.html", true);
 		extent.addSystemInfo("Host Name", "FrameWork").addSystemInfo("Environment", "Windows")
 				.addSystemInfo("User Name", "Appu");
 		extent.loadConfig(new File(p.getProperty("extent-configFile")));
